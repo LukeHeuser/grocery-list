@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Main {
-    private static Scanner scanner = new Scanner(System.in);
-    private static ArrayList<String> newList = new ArrayList<>();
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final ArrayList<String> newList = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -25,7 +25,6 @@ public class Main {
 
             if("0".contains(action)) {
                 newList.sort(Comparator.naturalOrder());
-                System.out.println(newList);
                 break;
 
             } else if("1".contains(action)) {
